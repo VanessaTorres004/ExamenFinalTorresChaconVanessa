@@ -7,9 +7,14 @@
     Shell.FlyoutBehavior="Disabled"
     Title="ExamenFinal_TorresChaconVanessa">
 
-    <ShellContent
-        Title="Home"
-        ContentTemplate="{DataTemplate local:MainPage}"
-        Route="MainPage" />
+    <TabBar>
+        <ShellContent Title="Buscar Aeropuertos"
+                      Icon="search.png"
+                      ContentTemplate="{DataTemplate views:SearchPage}" />
+        <ShellContent Title="Aeropuertos Consultados"
+                      Icon="list.png"
+                      ContentTemplate="{DataTemplate views:ListPage}" />
+    </TabBar>
+</Shell> >
 
-</Shell>
+
