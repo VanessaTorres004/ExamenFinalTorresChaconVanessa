@@ -1,4 +1,4 @@
-using ExamenFinal_TorresChaconVanessa.V
+using ExamenFinal_TorresChaconVanessa.ViewModels;
 namespace ExamenFinal_TorresChaconVanessa.Views;
 
 
@@ -14,5 +14,4 @@ public partial class SearchPage : ContentPage
         BindingContext = viewModel;
     }
 
-}
 }

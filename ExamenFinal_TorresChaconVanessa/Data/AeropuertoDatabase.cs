@@ -9,11 +9,11 @@ using ExamenFinal_TorresChaconVanessa.Models;
 
 namespace ExamenFinal_TorresChaconVanessa.Data
 {
-    public class AeropuertoDatabase
+    public class DatabaseService
     {
         private readonly SQLiteAsyncConnection _database;
 
-        public AeropuertoDatabase(string dbPath)
+        public DatabaseService(string dbPath)
         {
             _database = new SQLiteAsyncConnection(dbPath);
             _database.CreateTableAsync<Aeropuerto>().Wait();
