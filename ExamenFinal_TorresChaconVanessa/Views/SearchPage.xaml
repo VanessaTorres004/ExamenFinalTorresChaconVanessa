@@ -4,7 +4,7 @@
              x:Class="ExamenFinal_TorresChaconVanessa.Views.SearchPage"
              Title="SearchPage">
     <ContentPage.BindingContext>
-        <vm:SearchViewModel />
+        <vm:AeropuertoSearch />
     </ContentPage.BindingContext>
 
     <VerticalStackLayout Spacing="15">
