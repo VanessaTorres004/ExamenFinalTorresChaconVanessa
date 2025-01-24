@@ -1,20 +1,23 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<Shell
+<Shell   
     x:Class="ExamenFinal_TorresChaconVanessa.AppShell"
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    xmlns:local="clr-namespace:ExamenFinal_TorresChaconVanessa"
+    xmlns:views="clr-namespace:ExamenFinal_TorresChaconVanessa.Views"
     Shell.FlyoutBehavior="Disabled"
     Title="ExamenFinal_TorresChaconVanessa">
 
     <TabBar>
-        <ShellContent Title="Buscar Aeropuertos"
-                      Icon="search.png"
-                      ContentTemplate="{DataTemplate views:SearchPage}" />
-        <ShellContent Title="Aeropuertos Consultados"
-                      Icon="list.png"
-                      ContentTemplate="{DataTemplate views:ListPage}" />
+        <Tab Title="Buscar Aeropuertos">
+            <ShellContent  
+                Icon="search.png"
+                ContentTemplate="{DataTemplate views:SearchPage}" />
+        </Tab>
+
+        <Tab Title="Aeropuertos Consultados">
+            <ShellContent 
+                Icon="list.png"
+                ContentTemplate="{DataTemplate views:ListPage}" />
+        </Tab>
     </TabBar>
-</Shell> >
-
-
+</Shell>

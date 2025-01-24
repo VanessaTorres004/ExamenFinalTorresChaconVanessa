@@ -1,12 +1,13 @@
-﻿namespace ExamenFinal_TorresChaconVanessa
+﻿using ExamenFinal_TorresChaconVanessa.Views;
+namespace ExamenFinal_TorresChaconVanessa
 {
     public partial class App : Application
     {
-        public App()
+        public App(SearchPage searchPage)
         {
             InitializeComponent();
 
-            MainPage = new AppShell();
+            MainPage = new AppShell(searchPage);
         }
     }
 }
