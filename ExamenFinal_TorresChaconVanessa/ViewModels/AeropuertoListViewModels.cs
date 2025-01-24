@@ -31,7 +31,7 @@ namespace ExamenFinal_TorresChaconVanessa.ViewModels
             try
             {
                 
-                var aeropuertosFromDb = await _databaseService.GetAeropuertoAsync();
+                var aeropuertosFromDb = await _databaseService.GetAeropuertosAsync();
                 if (aeropuertosFromDb != null && aeropuertosFromDb.Any())
                 {
                     aeropuertos.Clear();

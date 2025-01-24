@@ -4,11 +4,10 @@
              x:Class="ExamenFinal_TorresChaconVanessa.Views.ListPage"
              Title="Vanessa Torres"
              BackgroundColor="Azure">
-             
-   
     <ContentPage.BindingContext>
-        <vm:AeropuertoListViewModel/>
+        <vm:AeropuertoListViewModel />
     </ContentPage.BindingContext>
+
     <ListView ItemsSource="{Binding Aeropuertos}" 
           SeparatorVisibility="Default"
           BackgroundColor="#FFFFFF"

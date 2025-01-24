@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SQLite;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,6 +11,7 @@ namespace ExamenFinal_TorresChaconVanessa.Models
     {
         [PrimaryKey, AutoIncrement]
         public int Id { get; set; }
+        [PrimaryKey, AutoIncrement]
         public string Name { get; set; }
         public string Country { get; set; }
         public double Latitude { get; set; }
