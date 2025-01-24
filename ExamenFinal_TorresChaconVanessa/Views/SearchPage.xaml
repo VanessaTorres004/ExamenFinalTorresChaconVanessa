@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ExamenFinal_TorresChaconVanessa.Views.SearchPage"
+             Title="SearchPage">
+    <ContentPage.BindingContext>
+        <vm:SearchViewModel />
+    </ContentPage.BindingContext>
+
+    <VerticalStackLayout Spacing="15">
+
+        <Label x:Name="vtorres_labelTitle"
+               Text="Buscar Nombre"
+               FontSize="24"
+               FontAttributes="Bold"
+               HorizontalOptions="Center"
+               TextColor="#333333"
+               Margin="0,0,0,20"/>
+
+        <Entry x:Name="vtorres_entrySearch"
+               Placeholder="Ingrese Nombre del Aeropuerto"
+               Text="{Binding SearchText}"
+               FontSize="16"
+               BackgroundColor="LightPink"/>
+
+        <Button x:Name="vtorres_buttonSearch"
+                Text="Buscar"
+                Command="{Binding SearchMovieCommand}"
+                BackgroundColor="PaleTurquoise"
+                TextColor="Black"
+                CornerRadius="5"
+                Padding="10"
+                FontSize="16"
+                HorizontalOptions="FillAndExpand"
+                Margin="0,10"/>
+
+        <Button x:Name="vtorres_buttonClear"
+                Text="Limpiar"
+                Command="{Binding ClearSearchCommand}"
+                BackgroundColor="#FF6347"
+                TextColor="Black"
+                CornerRadius="5"
+                Padding="10"
+                FontSize="16"
+                HorizontalOptions="FillAndExpand"/>
+
+        <Label x:Name="vtorres_labelMessage"
+               Text="{Binding Message}"
+               TextColor="Red"
+               FontSize="16"
+               HorizontalOptions="Center"
+               IsVisible="{Binding IsMessageVisible}" />
+
+    </VerticalStackLayout>
+</ContentPage>
