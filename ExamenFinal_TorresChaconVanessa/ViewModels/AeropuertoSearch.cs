@@ -40,7 +40,6 @@ namespace ExamenFinalTorresChaconVanessa.ViewModels
         [ObservableProperty]
         private string message;
 
-       
         [RelayCommand]
         private async Task SearchAeropuerto()
         {
@@ -52,11 +51,9 @@ namespace ExamenFinalTorresChaconVanessa.ViewModels
 
             try
             {
-                
                 var aeropuerto = await _aeropuertoService.SearchAeropuertoAsync(SearchText);
                 if (aeropuerto != null)
                 {
-                    
                     await _databaseService.SaveAeropuertoAsync(aeropuerto);
                     Message = "Aeropuerto guardado exitosamente.";
                 }
@@ -71,12 +68,13 @@ namespace ExamenFinalTorresChaconVanessa.ViewModels
             }
         }
 
-        
         [RelayCommand]
         private void ClearSearch()
         {
             SearchText = string.Empty;
             Message = string.Empty;
         }
+
+        
     }
 }

@@ -25,6 +25,8 @@ namespace ExamenFinalTorresChaconVanessa.Data
                 
                 string url = $"https://freetestapi.com/api/v1/airports?search={query}&limit=1";
                 var response = await _httpClient.GetAsync(url);
+                var content = await response.Content.ReadAsStringAsync();
+                return JsonSerializer.Deserialize<Aeropuerto>(content);
 
                 if (!response.IsSuccessStatusCode)
                 {
