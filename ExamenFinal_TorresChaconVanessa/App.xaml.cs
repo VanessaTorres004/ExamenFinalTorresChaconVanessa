@@ -1,5 +1,5 @@
-﻿using ExamenFinal_TorresChaconVanessa.Views;
-namespace ExamenFinal_TorresChaconVanessa
+﻿using ExamenFinalTorresChaconVanessa.Views;
+namespace ExamenFinalTorresChaconVanessa
 {
     public partial class App : Application
     {

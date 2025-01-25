@@ -4,10 +4,10 @@ using System.Linq;
 using System.Threading.Tasks;
 using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
-using ExamenFinal_TorresChaconVanessa.Data;
-using ExamenFinal_TorresChaconVanessa.Models;
+using ExamenFinalTorresChaconVanessa.Data;
+using ExamenFinalTorresChaconVanessa.Models;
 
-namespace ExamenFinal_TorresChaconVanessa.ViewModels
+namespace ExamenFinalTorresChaconVanessa.ViewModels
 {
     public partial class AeropuertoListViewModel : ObservableObject
     {

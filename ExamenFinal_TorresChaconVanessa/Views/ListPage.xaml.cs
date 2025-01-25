@@ -1,7 +1,7 @@
 using Microsoft.Maui.Controls;
-using ExamenFinal_TorresChaconVanessa.ViewModels;
+using ExamenFinalTorresChaconVanessa.ViewModels;
        
-namespace ExamenFinal_TorresChaconVanessa.Views
+namespace ExamenFinalTorresChaconVanessa.Views
 {
     public partial class ListPage : ContentPage
     {

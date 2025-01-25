@@ -1,7 +1,7 @@
-using ExamenFinal_TorresChaconVanessa.Models;
-using ExamenFinal_TorresChaconVanessa.ViewModels;
-using ExamenFinal_TorresChaconVanessa.ViewModels;
-namespace ExamenFinal_TorresChaconVanessa.Views;
+using ExamenFinalTorresChaconVanessa.Models;
+using ExamenFinalTorresChaconVanessa.ViewModels;
+using ExamenFinalTorresChaconVanessa.ViewModels;
+namespace ExamenFinalTorresChaconVanessa.Views;
 
 
 public partial class SearchPage : ContentPage

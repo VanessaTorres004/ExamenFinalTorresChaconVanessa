@@ -1,6 +1,6 @@
 ﻿using Microsoft.Extensions.Logging;
 
-namespace ExamenFinal_TorresChaconVanessa
+namespace ExamenFinalTorresChaconVanessa
 {
     public static class MauiProgram
     {

@@ -1,7 +1,7 @@
 ﻿using Android.App;
 using Android.Runtime;
 
-namespace ExamenFinal_TorresChaconVanessa
+namespace ExamenFinalTorresChaconVanessa
 {
     [Application]
     public class MainApplication : MauiApplication

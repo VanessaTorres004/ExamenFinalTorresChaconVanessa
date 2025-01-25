@@ -4,10 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using SQLite;
-using ExamenFinal_TorresChaconVanessa.Models;
+using ExamenFinalTorresChaconVanessa.Models;
 
 
-namespace ExamenFinal_TorresChaconVanessa.Data
+namespace ExamenFinalTorresChaconVanessa.Data
 {
     public class DatabaseService
     {

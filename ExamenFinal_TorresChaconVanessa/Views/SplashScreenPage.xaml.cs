@@ -1,6 +1,6 @@
-using ExamenFinal_TorresChaconVanessa.Views;
+using ExamenFinalTorresChaconVanessa.Views;
 
-namespace ExamenFinal_TorresChaconVanessa.Views;
+namespace ExamenFinalTorresChaconVanessa.Views;
 
 public partial class SplashScreenPage : ContentPage
 {

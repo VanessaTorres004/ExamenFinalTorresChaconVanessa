@@ -1,12 +1,20 @@
-﻿using System.Text.Json;
+﻿using System.Windows.Input;
+using System.Collections.ObjectModel;
+using System.Net.Http;
+using System.Text.Json;
 using System.Threading.Tasks;
-using ExamenFinal_TorresChaconVanessa.Models;
-using ExamenFinal_TorresChaconVanessa.Data;
+using ExamenFinalTorresChaconVanessa.Models;
+using ExamenFinalTorresChaconVanessa.Data;
+using System.IO;
 using System;
+using System.ComponentModel;
 using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
+using System.Runtime.CompilerServices;
+using System.Linq;
+using Microsoft.Maui.Controls;
 
-namespace ExamenFinal_TorresChaconVanessa.ViewModels
+namespace ExamenFinalTorresChaconVanessa.ViewModels
 {
     [ObservableObject]
     public partial class SearchViewModel

@@ -5,13 +5,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ExamenFinal_TorresChaconVanessa.Models
+namespace ExamenFinalTorresChaconVanessa.Models
 {
     public class Aeropuerto
     {
         [PrimaryKey, AutoIncrement]
         public int Id { get; set; }
-        [PrimaryKey, AutoIncrement]
+        
         public string Name { get; set; }
         public string Country { get; set; }
         public double Latitude { get; set; }
