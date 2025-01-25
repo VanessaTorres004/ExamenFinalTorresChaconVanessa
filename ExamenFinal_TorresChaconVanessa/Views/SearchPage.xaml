@@ -28,7 +28,7 @@
 
         <Button x:Name="vtorres_buttonSearch"
                 Text="Buscar"
-                Command="{Binding SearchMovieCommand}"
+                Command="{Binding SearchAeropuertoCommand}"
                 BackgroundColor="PaleTurquoise"
                 TextColor="Black"
                 CornerRadius="5"
