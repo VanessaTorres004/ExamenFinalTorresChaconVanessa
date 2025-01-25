@@ -1,4 +1,11 @@
-﻿namespace ExamenFinalTorresChaconVanessa
+﻿using ExamenFinalTorresChaconVanessa;
+using ExamenFinalTorresChaconVanessa.Data;
+using ExamenFinalTorresChaconVanessa.ViewModels;
+using ExamenFinalTorresChaconVanessa.Views;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Logging;
+
+namespace ExamenFinalTorresChaconVanessa
 {
     public partial class MainPage : ContentPage
     {

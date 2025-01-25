@@ -1,6 +1,5 @@
 using ExamenFinalTorresChaconVanessa.Models;
 using ExamenFinalTorresChaconVanessa.ViewModels;
-using ExamenFinalTorresChaconVanessa.ViewModels;
 namespace ExamenFinalTorresChaconVanessa.Views;
 
 
