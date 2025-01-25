@@ -29,10 +29,7 @@ namespace ExamenFinalTorresChaconVanessa.Data
             return _database.InsertAsync(aeropuerto);
         }
 
-        public Task<int> DeleteAeropuertoAsync(Aeropuerto aeropuerto)
-        {
-            return _database.DeleteAsync(aeropuerto);
-        }
+        
     }
 }
 

@@ -14,15 +14,14 @@ namespace ExamenFinalTorresChaconVanessa.ViewModels
         private readonly DatabaseService _databaseService;
 
         [ObservableProperty]
-
-        private ObservableCollection<Aeropuerto> aeropuertos;
+        private ObservableCollection<Aeropuerto> aeropuertoResponses;
 
         public AeropuertoListViewModel() { }
 
         public AeropuertoListViewModel(DatabaseService databaseService)
         {
             _databaseService = databaseService ?? throw new ArgumentNullException(nameof(databaseService));
-            aeropuertos = new ObservableCollection<Aeropuerto>();
+            AeropuertoResponses = new ObservableCollection<Aeropuerto>();
         }
 
         [RelayCommand]
@@ -30,14 +29,13 @@ namespace ExamenFinalTorresChaconVanessa.ViewModels
         {
             try
             {
-                
-                var aeropuertosFromDb = await _databaseService.GetAeropuertosAsync();
-                if (aeropuertosFromDb != null && aeropuertosFromDb.Any())
+                var aeropuertoResponsesFromDb = await _databaseService.GetAeropuertosAsync();
+                if (aeropuertoResponsesFromDb != null && aeropuertoResponsesFromDb.Count > 0)
                 {
-                    aeropuertos.Clear();
-                    foreach (var aeropuerto in aeropuertosFromDb)
+                    AeropuertoResponses.Clear();
+                    foreach (var aeropuerto in aeropuertoResponsesFromDb)
                     {
-                        aeropuertos.Add(aeropuerto);
+                        AeropuertoResponses.Add(aeropuerto);
                     }
                 }
                 else
