@@ -23,21 +23,16 @@ namespace ExamenFinalTorresChaconVanessa.ViewModels
         private readonly DatabaseService _databaseService;
 
        
-        public SearchViewModel() 
-        {
-            Aeropuertos = new ObservableCollection<Aeropuerto>();
-
-        }
+        public SearchViewModel() { }
 
       
         public SearchViewModel(AeropuertoService aeropuertoService, DatabaseService databaseService)
         {
             _aeropuertoService = aeropuertoService ?? throw new ArgumentNullException(nameof(aeropuertoService));
             _databaseService = databaseService ?? throw new ArgumentNullException(nameof(databaseService));
-            Aeropuertos = new ObservableCollection<Aeropuerto>();
         }
 
-
+       
         [ObservableProperty]
         private string searchText;
 
