@@ -25,6 +25,10 @@ namespace ExamenFinalTorresChaconVanessa.ViewModels
         }
 
         [RelayCommand]
+        public async Task LoadAeropuertosCommand()
+        {
+            await LoadAeropuertosAsync();
+        }
         private async Task LoadAeropuertosAsync()
         {
             try

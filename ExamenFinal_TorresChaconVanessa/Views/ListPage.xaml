@@ -9,18 +9,18 @@
         <vm:AeropuertoListViewModel />
     </ContentPage.BindingContext>
 
-    <ListView ItemsSource="{Binding Aeropuertos}" 
+    <ListView ItemsSource="{Binding AeropuertoResponses}" 
        SeparatorVisibility="Default"
-       BackgroundColor="#FFFFFF"
+       BackgroundColor="Cyan"
        Margin="10"
        x:Name="vtorres_listview1">
 
         <ListView.ItemTemplate>
             <DataTemplate>
                 <ViewCell>
-                    <StackLayout Padding="15" Margin="10" BackgroundColor="#FFFFFF">
+                    <StackLayout Padding="15" Margin="10" BackgroundColor="LightSalmon">
 
-                        <Label Text="{Binding Nombre}" 
+                        <Label Text="{Binding Name}" 
                         FontSize="22" 
                         FontAttributes="Bold" 
                         TextColor="#333333" 
@@ -35,7 +35,7 @@
                                 FontSize="14" 
                                 TextColor="#555555" 
                                 x:Name="vtorres_label2"/>
-                                <Label Text="{Binding Pais}" 
+                                <Label Text="{Binding Country}" 
                                 FontSize="14" 
                                 TextColor="#1E90FF" 
                                 x:Name="vtorres_label3"/>
@@ -48,7 +48,7 @@
                                 FontSize="14" 
                                 TextColor="#555555" 
                                 x:Name="vtorres_label4"/>
-                                <Label Text="{Binding Latitud}" 
+                                <Label Text="{Binding Latitude}" 
                                 FontSize="14" 
                                 TextColor="#228B22" 
                                 x:Name="vtorres_label5"/>
@@ -61,7 +61,7 @@
                                 FontSize="14" 
                                 TextColor="#555555" 
                                 x:Name="vtorres_label6"/>
-                                <Label Text="{Binding Longitud}" 
+                                <Label Text="{Binding Longitude}" 
                                 FontSize="14" 
                                 TextColor="#FF4500" 
                                 x:Name="vtorres_label7"/>
@@ -69,15 +69,11 @@
 
 
                             <StackLayout Orientation="Horizontal" Padding="5">
-                                <Label Text="Correo:" 
-                                FontAttributes="Bold" 
-                                FontSize="14" 
-                                TextColor="#555555" 
-                                x:Name="vtorres_label8"/>
+                                
                                 <Label Text="{Binding Email}" 
                                 FontSize="14" 
                                 TextColor="#8A2BE2" 
-                                x:Name="vtorres_label9"/>
+                                x:Name="vtorres_label8"/>
                             </StackLayout>
 
 
